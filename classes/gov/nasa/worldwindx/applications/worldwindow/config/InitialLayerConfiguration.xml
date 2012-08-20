@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id-->
+<!--This document specifies the initial layers to load into the layer manager-->
+<LayerList title="Base Layers">
+    <Layer className="gov.nasa.worldwind.layers.StarsLayer" title="Stars" actuate="onRequest"/>
+    <Layer className="gov.nasa.worldwind.layers.SkyGradientLayer" title="Sky" actuate="onRequest"/>
+    <Layer className="gov.nasa.worldwind.layers.Earth.BMNGOneImage" title="Earth Image" actuate="onLoad"/>
+    <Layer href="config/Earth/BMNGWMSLayer.xml" title="Blue Marble" actuate="onLoad"/>
+    <Layer href="config/Earth/raga3-1.xml" title="SnR G2 20" actuate="onLoad"/>
+    <Layer href="config/Earth/raga3-2.xml" title="SnR G2 3" actuate="onRequest"/>
+    <Layer href="config/Earth/raga3-3.xml" title="SnR G2 10" actuate="onRequest"/>
+    <!-- <Layer href="config/Earth/NetworkLinksRemote.kml" title="Google KML" actuate="onRequest"/> -->
+    <Layer href="config/Earth/gsv.xml" title="GSV" actuate="onRequest"/>
+    <Layer href="config/Earth/LandsatI3WMSLayer.xml" title="Landsat 7 ICube" actuate="onLoad"/>
+    <Layer href="config/Earth/MSVirtualEarthAerialLayer.xml" title="MS Virtual Earth Satellite" actuate="onRequest"/>
+    <Layer className="gov.nasa.worldwind.layers.Earth.NASAWFSPlaceNameLayer" title="Place Names" actuate="onLoad"/>
+</LayerList>
